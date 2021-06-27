@@ -33,4 +33,16 @@ class PhpConstant
     {
         return implode($glue, static::all());
     }
+
+    /** @return \Illuminate\Support\Collection */
+    public static function collect()
+    {
+        return collect(static::all());
+    }
+
+    /** @return \Illuminate\Support\Collection */
+    public static function collectOptions()
+    {
+        return collect(static::options());
+    }
 }
