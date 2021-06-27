@@ -1,10 +1,11 @@
 # About PhpConstant
 
+[![Tests](https://github.com/kevinpurwito/php-constant/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/kevinpurwito/php-constant/actions/workflows/run-tests.yml)
+[![Code Style](https://github.com/kevinpurwito/php-constant/actions/workflows/php-cs-fixer.yml/badge.svg?branch=main)](https://github.com/kevinpurwito/php-constant/actions/workflows/php-cs-fixer.yml)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/kevinpurwito/php-constant.svg?style=flat-square)](https://packagist.org/packages/kevinpurwito/php-constant)
 [![Total Downloads](https://img.shields.io/packagist/dt/kevinpurwito/php-constant.svg?style=flat-square)](https://packagist.org/packages/kevinpurwito/php-constant)
-[![Tests](https://github.com/kevinpurwito/php-constant/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/kevinpurwito/php-constant/actions/workflows/main.yml)
 
-PhpConstant is a simple class containing useful functions which you can extend to your Constant Classes.
+PhpConstant is a simple class containing useful functions which you can extend to your constant classes.
 
 For example if you want to have a StatusConst class, which contains all possible statuses as constants, 
 you can extend PhpConstant to use its functions for your StatusConst class.  
@@ -30,18 +31,18 @@ class StatusConst extends PhpConstant
     const COMPLETED = 'completed';
 }
 
-StatusConst::all();
 // returns an array like this: ['pending', 'in_process', 'completed']
+StatusConst::all();
 
-StatusConst::options();
 // returns a key-value array like this: ['pending' => 'Pending', 'in_process' => 'In Process', 'completed' => 'Completed']
+StatusConst::options();
 
-StatusConst::asString();
 // returns a string like this: 'pending,in_process,completed'
+StatusConst::asString();
 
 // You can use any char you want as the glue for asString() function
-StatusConst::asString('|');
 // returns a string like this: 'pending|in_process|completed'
+StatusConst::asString('|');
 ```
 ### Testing
 
@@ -55,11 +56,12 @@ Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recen
 
 ## Contributing
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email [kevin.purwito@gmail.com](mailto:kevin.purwito@gmail.com) instead of using the issue tracker.
+If you discover any security related issues, please email [kevin.purwito@gmail.com](mailto:kevin.purwito@gmail.com) 
+instead of using the issue tracker.
 
 ## Credits
 
@@ -73,4 +75,5 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 ## PHP Package Boilerplate
 
 This package was generated using the [PHP Package Boilerplate](https://laravelpackageboilerplate.com)
-by [Beyond Code](http://beyondco.de/).
+by [Beyond Code](http://beyondco.de/) 
+with some modifications inspired from [SPATIE Package Skeleton](https://github.com/spatie/package-skeleton-php).

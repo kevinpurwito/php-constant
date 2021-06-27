@@ -11,9 +11,10 @@ class PhpConstant
         $ref = new ReflectionClass(static::class);
         $constants = $ref->getConstants();
         $arr = [];
-        foreach ($constants as $key => $value) {
+        foreach ($constants as $value) {
             $arr[] = $value;
         }
+
         return $arr;
     }
 
@@ -24,6 +25,7 @@ class PhpConstant
         foreach ($constants as $constant) {
             $arr[$constant] = ucwords(str_replace('_', ' ', $constant));
         }
+
         return $arr;
     }
 
