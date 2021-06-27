@@ -8,6 +8,3 @@ contact_links:
     url: https://github.com/kevinpurwito/php-constant/discussions/new?category=ideas
     about: Share ideas for new features
     
-  - name: Report a bug
-    url: https://github.com/kevinpurwito/php-constant/issues/new
-    about: Report a reproducable bug
