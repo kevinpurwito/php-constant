@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/kevinpurwito/php-constant.svg?style=flat-square)](https://packagist.org/packages/kevinpurwito/php-constant)
 [![Total Downloads](https://img.shields.io/packagist/dt/kevinpurwito/php-constant.svg?style=flat-square)](https://packagist.org/packages/kevinpurwito/php-constant)
-![GitHub Actions](https://github.com/kevinpurwito/php-constant/actions/workflows/main.yml/badge.svg)
+[![Tests](https://github.com/kevinpurwito/php-constant/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/kevinpurwito/php-constant/actions/workflows/main.yml)
 
 PhpConstant is a simple class containing useful functions which you can extend to your Constant Classes.
 
