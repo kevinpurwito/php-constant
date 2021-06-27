@@ -11,8 +11,8 @@ class PhpConstant
         $ref = new ReflectionClass(static::class);
         $constants = $ref->getConstants();
         $arr = [];
-        foreach ($constants as $value) {
-            $arr[] = $value;
+        foreach ($constants as $constant) {
+            $arr[] = $constant;
         }
 
         return $arr;

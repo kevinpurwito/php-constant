@@ -2,6 +2,7 @@
 
 [![Tests](https://github.com/kevinpurwito/php-constant/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/kevinpurwito/php-constant/actions/workflows/run-tests.yml)
 [![Code Style](https://github.com/kevinpurwito/php-constant/actions/workflows/php-cs-fixer.yml/badge.svg?branch=main)](https://github.com/kevinpurwito/php-constant/actions/workflows/php-cs-fixer.yml)
+[![Psalm](https://github.com/kevinpurwito/php-constant/actions/workflows/psalm.yml/badge.svg?branch=main)](https://github.com/kevinpurwito/php-constant/actions/workflows/psalm.yml)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/kevinpurwito/php-constant.svg?style=flat-square)](https://packagist.org/packages/kevinpurwito/php-constant)
 [![Total Downloads](https://img.shields.io/packagist/dt/kevinpurwito/php-constant.svg?style=flat-square)](https://packagist.org/packages/kevinpurwito/php-constant)
 

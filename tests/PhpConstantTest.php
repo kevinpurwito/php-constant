@@ -26,7 +26,7 @@ class PhpConstantTest extends TestCase
     }
 
     /** @test */
-    public function it_returns_constants_as_options()
+    public function it_returns_constants_as_key_value_array()
     {
         $statuses = StatusConst::options();
         $this->assertTrue(is_array($statuses));
