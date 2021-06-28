@@ -32,6 +32,15 @@ class StatusConst extends PhpConstant
     const COMPLETED = 'completed';
 }
 
+/*
+|--------------------------------------------------------------------------
+| Framework Agnostic Functions
+|--------------------------------------------------------------------------
+|
+| Simple functions not dependent to any framework and can be used in any PHP project.
+|
+*/
+
 // returns an array like this: ['pending', 'in_process', 'completed']
 StatusConst::all();
 
@@ -44,7 +53,24 @@ StatusConst::asString();
 // You can use any char you want as the glue for asString() function
 // returns a string like this: 'pending|in_process|completed'
 StatusConst::asString('|');
+
+/*
+|--------------------------------------------------------------------------
+| Laravel Specific Functions
+|--------------------------------------------------------------------------
+|
+| Functions to support [Laravel Collection](https://laravel.com/docs/collections) class.
+| Laravel Collection is a class that provides a fluent, convenient wrapper for working with arrays of data.
+|
+*/
+
+// returns a collection equivalent to: collect(['pending', 'in_process', 'completed'])
+StatusConst::collect();
+
+// returns a key-value collection equivalent to: collect(['pending' => 'Pending', 'in_process' => 'In Process', 'completed' => 'Completed'])
+StatusConst::collectOptions();
 ```
+
 ### Testing
 
 ```bash
@@ -77,4 +103,4 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 This package was generated using the [PHP Package Boilerplate](https://laravelpackageboilerplate.com)
 by [Beyond Code](http://beyondco.de/) 
-with some modifications inspired from [SPATIE Package Skeleton](https://github.com/spatie/package-skeleton-php).
+with some modifications inspired from [PHP Package Skeleton](https://github.com/spatie/package-skeleton-php) by [spatie](https://spatie.be/).
