@@ -55,8 +55,12 @@ class PhpConstantTest extends TestCase
     public function it_returns_constants_as_key_value_collection()
     {
         $statuses = StatusConst::collectOptions();
-        $this->assertTrue($statuses->contains(StatusConst::PENDING));
-        $this->assertTrue($statuses->contains(StatusConst::IN_PROCESS));
-        $this->assertTrue($statuses->contains(StatusConst::COMPLETED));
+        $this->assertArrayHasKey(StatusConst::PENDING, $statuses);
+        $this->assertArrayHasKey(StatusConst::IN_PROCESS, $statuses);
+        $this->assertArrayHasKey(StatusConst::COMPLETED, $statuses);
+
+        $this->assertTrue($statuses->contains(ucwords(str_replace('_', ' ', StatusConst::PENDING))));
+        $this->assertTrue($statuses->contains(ucwords(str_replace('_', ' ', StatusConst::IN_PROCESS))));
+        $this->assertTrue($statuses->contains(ucwords(str_replace('_', ' ', StatusConst::COMPLETED))));
     }
 }
