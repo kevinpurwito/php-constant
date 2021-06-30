@@ -2,6 +2,10 @@
 
 All notable changes to `php-constant` will be documented in this file
 
+## 1.1.1 - 2021-06-30
+### Fixed
+- Fix major composer.json issue
+
 ## 1.1.0 - 2021-06-28
 ### Added
 2 additional functions to support [Laravel Collection](https://laravel.com/docs/collections) class.
