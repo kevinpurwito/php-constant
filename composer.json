@@ -35,16 +35,6 @@
             "Kevinpurwito\\PhpConstant\\Tests\\": "tests"
         }
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Kevinpurwito\\PhpConstant\\PhpConstantServiceProvider"
-            ],
-            "aliases": [
-                "Kevinpurwito\\PhpConstant\\PhpConstantServiceFacade"
-            ]
-        }
-    },
     "scripts": {
         "format": "php-cs-fixer fix --allow-risky=yes",
         "psalm": "psalm",
