@@ -2,7 +2,7 @@
 
 All notable changes to `php-constant` will be documented in this file
 
-## 1.1.1 - 2021-06-30
+## 1.2.0 - 2021-06-30
 ### Fixed
 - Fix major composer.json issue
 
